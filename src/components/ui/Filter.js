@@ -10,7 +10,7 @@ export default function Filter(props) {
         <ul className="filters list-unstyled clearfix">
             {Object.keys(options).map(key => (
                 <li key={key}>
-                    <a onClick={() => changeFilter(key)} className={getClass(key)}>
+                    <a onClick={() => changeFilter(key)} data-testid={options[key]} className={getClass(key)}>
                         {options[key]}
                     </a>
                 </li>

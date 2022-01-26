@@ -12,6 +12,7 @@ function InputBox(props) {
             onKeyUp={handleKeyUp}
             onChange={handleChange}
             placeholder="Add New"
+               data-testid='input'
         />
     );
 }

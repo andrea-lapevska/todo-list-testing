@@ -10,6 +10,7 @@ export default function SearchBox(props) {
             value={query}
             onChange={e => setSearchQuery(e.target.value)}
             placeholder="Search"
+            data-testid="search"
         />
     );
 }

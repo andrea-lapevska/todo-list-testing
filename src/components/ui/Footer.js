@@ -9,7 +9,7 @@ export default function Footer(props) {
             <div className="pull-left buttons">
                 <ButtonWrapper {...props}/>
             </div>
-            <div className="pull-left">
+            <div className="pull-left" data-testid="items-left">
                 {`${activeItemCount} items left`}
             </div>
             <div className="pull-right">

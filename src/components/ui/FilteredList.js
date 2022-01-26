@@ -7,12 +7,12 @@ export default function FilteredList(props) {
 
     if (items.length === 0) {
         return (
-            <p className="alert alert-info">{MSG_NO_ITEMS}</p>
+            <p data-testid="error-message" className="alert alert-info">{MSG_NO_ITEMS}</p>
         );
     }
 
     return (
-        <ul className="list-unstyled">
+        <ul className="list-unstyled" data-testid='list'>
             {items.map(item => (
                 <TodoItem key={item.id} data={item} changeStatus={changeStatus}/>
             ))}
